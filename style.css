@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.chart-container{
+    background-color: #2C5364;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.svg-container{
+    margin: 20px;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 90px;
+}
+
+svg{
+    background-color: #28405f;
+    box-shadow: 3px 0px 9px 12px #000000;
+    border-radius: 10px;
+}
+
+#tooltip{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 150px;
+    height: 90px;
+    background-color: #2C5364;
+    box-shadow: 0px 0px 11px 5px #000000;
+    z-index: 2;
+    color: white;
+    font-size: 17px;
+}
+
+g text,
+g path,
+g line{
+    color: white;
+}
+
+#title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    margin: 10px auto;
+}
+
+.gdp-name{
+    fill: white;
+    font-size: 13px;
+}
+
+.info{
+    fill: white;
+    font-size: 10px;
+}
+
+path:last-child{
+    display: none;
+}
