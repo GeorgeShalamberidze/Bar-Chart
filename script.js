@@ -94,7 +94,7 @@ d3.json(
                 .duration(200)
                 .style('opacity', 0.76)
         })
-        .on("mouseout", (d, i) => {
+        .on("mouseout", () => {
             tooltip
                 .transition()
                 .duration(200)
@@ -118,4 +118,3 @@ d3.json(
         .text("http://www.bea.gov/national/pdf/nipaguid.pdf")
         .attr("class", "info");
 });
-
